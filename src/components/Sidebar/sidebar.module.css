@@ -1,0 +1,35 @@
+.sbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
+}
+
+
+.sidebar {
+  height: 100vh;
+  min-height: 100%;
+  background-color: var(--bgColor);
+  color: white;
+  /* transition: transform 0.3s ease-in-out; */
+  transform: translateX(-250px);
+  
+}
+
+.sidebar.open {
+  width: 250px;
+  transform: translateX(0)
+}
+
+
+.sbar .sidebar.close  {
+  width:0px
+} 
+
+
+
+.toggle-btn2 {
+  position: absolute;
+  left: 0;
+}
